@@ -10,6 +10,9 @@ public class AnimalsCage {
     @Autowired
     @Qualifier("dog")
     private Animal animal;
+    @Autowired
+    @Qualifier ("timer")
+    private Timer timer;
 
     public Animal getAnimal() {
         return animal;
@@ -19,9 +22,7 @@ public class AnimalsCage {
         return timer;
     }
 
-    @Autowired
-    @Qualifier ("timer")
-    private Timer timer;
+
 
     @Autowired
     @Qualifier ("timer")
